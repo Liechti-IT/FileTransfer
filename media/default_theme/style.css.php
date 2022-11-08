@@ -60,7 +60,7 @@ body {
 
 h1 a {
   display: block;
-  background: url(logo-jirafeau.svg) no-repeat;
+  background: url(main-logo.svg) no-repeat;
   background-size: 100% 100%;
   text-indent: -9999px;
   height: 320px;
