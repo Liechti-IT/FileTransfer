@@ -135,20 +135,6 @@ Take a look at the FAQ to find out about how to change the ToS.
 
 ## FAQ
 
-### Can I add a new language in "FileTransfer"?
-
-Of course ! Translations are easy to make and no technical knowledge is required.
-
-Simply go to ["FileTransfer"'s Weblate](https://hosted.weblate.org/engage/"FileTransfer"/).
-
-If you want to add a new language in the list, feel free to contact us or leave a comment in ticket #9.
-
-Thanks to all contributors ! :)
-
-### How do I upgrade my "FileTransfer"?
-
-See change log and upgrade procedure in [CHANGELOG.md](https://gitlab.com/mojo42/"FileTransfer"/blob/master/CHANGELOG.md).
-
 ### How can I limit upload access?
 
 There are two ways to limit upload access (but not download):
@@ -168,12 +154,6 @@ Then the command can be placed in a cron file to automatize the process. For exa
 16 3    * * *   www-data  php /path/to/"FileTransfer"/admin.php clean_async
 ```
 
-### I have some troubles with IE
-
-If you have some strange behavior with IE, you may configure [compatibility mode](http://feedback.dominknow.com/knowledgebase/articles/159097-internet-explorer-ie8-ie9-ie10-and-ie11-compat).
-
-Anyway I would recommend you to use another web browser. :)
-
 ### How can I change the theme?
 
 You may change the default theme to any of the existing ones or a custom.
@@ -182,11 +162,6 @@ Open your ```lib/config.local.php``` and change setting in the »`style`« key t
 
 Hint: To create a custom theme just copy the »courgette« folder and name your theme »custom« (this way it will be ignored by git and not overwritten during updates). You are invited to enhance the existing themes and send pull requests however.
 
-### I found a bug, what should I do?
-
-Feel free to open a bug in the [GitLab's issues](https://gitlab.com/mojo42/"FileTransfer"/issues).
-If you can, please copy-paste informations related to bug opening provided in admin interface.
-Admin interface can be reached by accessing `/admin.php`.
 
 ### How to set maximum file size?
 
@@ -233,18 +208,6 @@ http {
     client_body_timeout 30m;
 }
 ```
-
-### How can I monitor the use of my "FileTransfer" instance?
-
-You may use Munin and simple scripts to collect the number of files in the "FileTransfer" instance as well as the disk space occupied by all the files. You can consult this [web page](https://blog.bandinelli.net/index.php?post/2016/05/15/Scripts-Munin-pour-"FileTransfer").
-
-### Why forking?
-
-The original project seems not to be continued anymore and I prefer to add more features and increase security from a stable version.
-
-### What can we expect in the future?
-
-Check [issues](https://gitlab.com/mojo42/"FileTransfer"/issues) to check open bugs and incoming new stuff. :)
 
 ### What about this file deduplication thing?
 
