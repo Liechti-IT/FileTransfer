@@ -1,9 +1,9 @@
-# "FileTransfer"
+# "FileUpload"
 
 
-Welcome to the official "FileTransfer" project, an [Open-Source software](https://en.wikipedia.org/wiki/Open-source_software).
+Welcome to the official "FileUpload" project, an [Open-Source software](https://en.wikipedia.org/wiki/Open-source_software).
 
-"FileTransfer" is a "one-click-filesharing": Select your file, upload, share a link. That's it.
+"FileUpload" is a "one-click-filesharing": Select your file, upload, share a link. That's it.
 
 
 ![Screenshot1](http://i.imgur.com/TPjh48P.png)
@@ -20,7 +20,7 @@ Welcome to the official "FileTransfer" project, an [Open-Source software](https:
 - Shortened URLs using base 64 encoding
 - Maximal upload size configurable
 - NO database, only use basic PHP
-- Simple language support with a lot of langages (help us on [weblate](https://hosted.weblate.org/engage/"FileTransfer"/)!)
+- Simple language support with a lot of langages (help us on [weblate](https://hosted.weblate.org/engage/"FileUpload"/)!)
 - File level [Deduplication](http://en.wikipedia.org/wiki/Data_deduplication) for storage optimization (does store duplicate files only once, but generate multiple links)
 - Optional data encryption
 - Small administration interface
@@ -30,7 +30,7 @@ Welcome to the official "FileTransfer" project, an [Open-Source software](https:
 - Bash script to upload files via command line
 - Themes
 
-"FileTransfer" is a fork of the project [Jirafeau](https://gitlab.com/mojo42/Jirafeau) based on the 4.5 version with **some** modifications.
+"FileUpload" is a fork of the project [Jirafeau](https://gitlab.com/mojo42/Jirafeau) based on the 4.5 version with **some** modifications.
 
 
 ## Screenshots
@@ -47,17 +47,17 @@ Welcome to the official "FileTransfer" project, an [Open-Source software](https:
 
 ## Installation
 
-This shows how to install "FileTransfer" by your own.
+This shows how to install "FileUpload" by your own.
 
 System requirements:
 - PHP >= 5.6
 - No database required, no mail required
 
 Installation steps:
-- Download the latest [release](https://github.com/Liechti-IT/FileTransfer) from GitHub onto your webserver
+- Download the latest [release](https://github.com/Liechti-IT/FileUpload) from GitHub onto your webserver
 - Set owner & group according to your webserver
 - A) Setup with the installation wizard (web):
-  - Open your browser and go to your installed location, eg. ```https://example.com/filetransfer/```
+  - Open your browser and go to your installed location, eg. ```https://example.com/fileupload/```
   - The script will redirect to you to a minimal installation wizard to set up all required options
   - All optional parameters may be set in ```lib/config.local.php```, take a look at ```lib/config.original.php``` to see all default values
 - B) Setup without the installation wizard (cli):
@@ -82,7 +82,7 @@ You have several options:
 
 If you are using Apache, you can add the following line to your configuration to prevent people to access to your ```var``` folder:
 
-```RedirectMatch 301 ^/var-.* http://my.service."FileTransfer" ```
+```RedirectMatch 301 ^/var-.* http://my.service.fileupload ```
 
 If you are using nginx, you can add the following to your $vhost.conf:
 
@@ -141,7 +141,7 @@ There are two ways to limit upload access (but not download):
 - you can set one or more passwords in order to access the upload interface, or/and
 - you can configure a list of authorized IP ([CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation)) which are allowed to access to the upload page
 
-Check documentation of ```upload_password``` and ```upload_ip``` parameters in [lib/config.original.php](https://gitlab.com/mojo42/"FileTransfer"/blob/master/lib/config.original.php).
+Check documentation of ```upload_password``` and ```upload_ip``` parameters in [lib/config.original.php](https://github.com/Liechti-it/FileUpload/lib/config.original.php).
 
 ### How can I automatize the cleaning of old (expired) files?
 
@@ -150,8 +150,8 @@ You can call the admin.php script from the command line (CLI) with the ```clean_
 Then the command can be placed in a cron file to automatize the process. For example:
 ```
 # m h dom mon dow user  command
-12 3    * * *   www-data  php /path/to/"FileTransfer"/admin.php clean_expired
-16 3    * * *   www-data  php /path/to/"FileTransfer"/admin.php clean_async
+12 3    * * *   www-data  php /path/to/"FileUpload"/admin.php clean_expired
+16 3    * * *   www-data  php /path/to/"FileUpload"/admin.php clean_async
 ```
 
 ### How can I change the theme?
@@ -170,18 +170,18 @@ If your browser supports HTML5 file API, you can send files as big as you want.
 For browsers who does not support HTML5 file API, the limitation come from PHP configuration.
 You have to set [post_max_size](https://php.net/manual/en/ini.core.php#ini.post-max-size) and [upload_max_filesize](https://php.net/manual/en/ini.core.php#ini.upload-max-filesize) in your php configuration. Note that Nginx setups may requiere to configure `client_max_body_size`.
 
-If you don't want to allow unlimited upload size, you can still setup a maximal file size in "FileTransfer"'s setting (see ```maximal_upload_size``` in your configuration)
+If you don't want to allow unlimited upload size, you can still setup a maximal file size in "FileUpload"'s setting (see ```maximal_upload_size``` in your configuration)
 
 ### How can I edit an option?
 
-Documentation of all default options are located in [lib/config.original.php](https://gitlab.com/mojo42/"FileTransfer"/blob/master/lib/config.original.php).
+Documentation of all default options are located in [lib/config.original.php](https://github.com/Liechti-it/FileUpload/lib/config.original.php).
 If you want to change an option, just edit your ```lib/config.local.php```.
 
 ### How can I change the Terms of Service?
 
 The license text on the "Terms of Service" page, which is shipped with the default installation, is based on the »[Open Source Initiative Terms of Service](https://opensource.org/ToS)«.
 
-To change this text simply copy the file [/lib/tos.original.txt](https://gitlab.com/mojo42/"FileTransfer"/blob/master/lib/tos.original.txt), rename it to ```/lib/tos.local.txt``` and adapt it to your own needs.
+To change this text simply copy the file [/lib/tos.original.txt](https://github.com/Liechti-it/FileUpload/lib/tos.original.txt), rename it to ```/lib/tos.local.txt``` and adapt it to your own needs.
 
 If you update the installation, then only the ```tos.original.txt``` file may change eventually, not your ```tos.local.txt``` file.
 
@@ -211,7 +211,7 @@ http {
 
 ### What about this file deduplication thing?
 
-"FileTransfer" can use a very simple file level deduplication for storage optimization.
+"FileUpload" can use a very simple file level deduplication for storage optimization.
 
 This mean that if some people upload several times the same file, this will only store one time the file and increment a counter.
 
@@ -219,7 +219,7 @@ If someone use his/her delete link or an admin cleans expired links, this will d
 
 When the counter falls to zero, the file is destroyed.
 
-In order to know if a newly uploaded file already exist, "FileTransfer" will hash the file using md5 by default but other methods are available (see `file_hash` documentation in `lib/config.original.php`).
+In order to know if a newly uploaded file already exist, "FileUpload" will hash the file using md5 by default but other methods are available (see `file_hash` documentation in `lib/config.original.php`).
 
 This feature is disabled by default and can be enabled through the `file_hash` option.
 
