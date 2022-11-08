@@ -54,7 +54,7 @@ System requirements:
 - No database required, no mail required
 
 Installation steps:
-- Ddownload the latest [release](https://github.com/Liechti-IT/FileTransfer) from GitHub onto your webserver
+- Download the latest [release](https://github.com/Liechti-IT/FileTransfer) from GitHub onto your webserver
 - Set owner & group according to your webserver
 - A) Setup with the installation wizard (web):
   - Open your browser and go to your installed location, eg. ```https://example.com/filetransfer/```
@@ -266,13 +266,3 @@ When file deduplication feature is enabled, files with the same hash are not dup
 So:
 - The button "delete link" will delete the reference to the file but might not destroy the file.
 - The button "delete file and links" will delete all references pointing to the file and will destroy the file.
-
-### How to contact someone from "FileTransfer"?
-
-Feel free to create an issue if you found a bug.
-
-Also, you can come have a chat on [libera.chat](https://web.libera.chat/) in `#"FileTransfer"` channel.
-
-### Can I buy you a coffee?
-
-You can [drop few bucks](https://www.paypal.com/paypalme/jeromejutteau) to help the [demo web site](https://"FileTransfer".net) to stay alive.
