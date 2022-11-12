@@ -210,7 +210,7 @@ input[type="submit"]:focus {
    ========================================================================== */
 
 #copyright {
-  display: none;
+  /*display: none; */
   text-align: center;
   font-size: 0.8em;
   color: #bbb;
