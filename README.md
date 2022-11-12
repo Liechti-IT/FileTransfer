@@ -35,15 +35,13 @@ Welcome to the official "FileUpload" project, an [Open-Source software](https://
 
 ## Screenshots
 
-- [Installation - Step 1](http://i.imgur.com/hmpT1eN.jpg)
-- [Installation - Step 2](http://i.imgur.com/2e0UGKE.jpg)
-- [Installation - Step 3](http://i.imgur.com/ofAjLXh.jpg)
-- [Installation - Step 4](http://i.imgur.com/WXqnfqJ.jpg)
-- [Upload - Step 1](http://i.imgur.com/SBmSwzJ.jpg)
-- [Upload - Step 2](http://i.imgur.com/wzPkb1Z.jpg)
-- [Upload - Progress](http://i.imgur.com/i6n95kv.jpg)
-- [Upload - Confirmation page](http://i.imgur.com/P2oS1MY.jpg)
-- [Admin Interface](http://i.imgur.com/nTdsVzn.png)
+- [Installation - Step 1](/Screenshots/installscreenshot1.JPG)
+- [Installation - Step 2](/Screenshots/installscreenshot2.JPG)
+- [Installation - Step 3](/Screenshots/installscreenshot3.JPG)
+- [Upload - Step 1](/Screenshots/screenshot1.JPG)
+- [Upload - Step 2](/Screenshots/screenshot2.JPG)
+- [Upload - Step 3](/Screenshots/screenshot3.JPG)
+- [Admin Interface](/Screenshots/screenshot4.JPG)
 
 ## Installation
 
