@@ -6,7 +6,7 @@ Welcome to the official "FileUpload" project, an [Open-Source software](https://
 "FileUpload" is a "one-click-filesharing": Select your file, upload, share a link. That's it.
 
 
-![Screenshot1](http://i.imgur.com/TPjh48P.png)
+![Screenshot1](/screenshots/Screenshot1.jpg?raw=true "Screenshot 1")
 
 ## Main features
 
