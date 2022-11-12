@@ -6,7 +6,7 @@ header('x-ua-compatible: ie=edge');
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Liechti-IT - FileUpload</title>
+  <title>FileUpload</title>
   <link id="shortcut_icon" rel="shortcut icon" href="<?php echo 'media/' . $cfg['style'] . '/favicon.ico'; ?>">
   <link id="stylesheet" rel="stylesheet" href="<?php echo 'media/' . $cfg['style'] . '/style.css.php'; ?>" type="text/css" />
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
