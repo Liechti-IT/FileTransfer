@@ -1,7 +1,7 @@
 # "FileUpload"
 
 
-Welcome to the official "FileUpload" project, an [Open-Source software](https://en.wikipedia.org/wiki/Open-source_software).
+Welcome to the "FileUpload" project, an [Open-Source software](https://en.wikipedia.org/wiki/Open-source_software).
 
 "FileUpload" is a "one-click-filesharing": Select your file, upload, share a link. That's it.
 
